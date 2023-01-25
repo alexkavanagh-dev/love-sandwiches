@@ -87,6 +87,9 @@ def calculate_surplus_data(sales_row):
 
 
 def update_surplus_worksheet(surplus_data):
+    """
+    Update surplus worksheet with calculated data
+    """
     print("Updating surplus worksheet...\n")
     surplus_worksheet = SHEET.worksheet('surplus')
     surplus_worksheet.append_row(surplus_data)
